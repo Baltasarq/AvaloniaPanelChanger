@@ -1,0 +1,30 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        MinHeight="400" MinWidth="400"
+        Width="400" Height="400"
+        x:Class="PanelChanger.Ui.MainWindow"
+        Title="PanelChanger">
+    <DockPanel Margin="10">
+        <ComboBox DockPanel.Dock="Top" Name="CbPanel" Margin="10" SelectedIndex="0">
+            <ComboBoxItem Name="CbiPanel1">Panel 1</ComboBoxItem>
+            <ComboBoxItem Name="CbiPanel2">Panel 2</ComboBoxItem>
+            <ComboBoxItem Name="CbiPanel3">Panel 3</ComboBoxItem>
+        </ComboBox>
+        <DockPanel Name="MainPanel" Margin="10" LastChildFill="False">
+            <DockPanel Name="Panel1" IsVisible="False" Margin="10" Background="DarkCyan">
+                <Label>Panel 1</Label>
+            </DockPanel>
+            
+            <DockPanel Name="Panel2" IsVisible="False" Margin="10" Background="DarkGreen">
+                <Label>Panel 2</Label>
+            </DockPanel>
+            
+            <DockPanel Name="Panel3" IsVisible="False" Margin="10" Background="DarkOrange">
+                <Label>Panel 3</Label>
+            </DockPanel>
+            
+        </DockPanel>
+    </DockPanel>
+</Window>
